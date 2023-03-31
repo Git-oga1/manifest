@@ -5,7 +5,7 @@ metadata:
   namespace: maven-ns
 spec:
   revisionHistoryLimit: 10
-  replicas: 2
+  replicas: 1
   strategy:
     type: Recreate
   selector:
@@ -22,13 +22,6 @@ spec:
         image: DockerLAnthony/maven-web-application:208060c55b7f53ea7e53eb2146c567b9c4368447
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            cpu: 200m
-            memory: 256Mi
-          limits:
-            cpu: 500m
-            memory: 512Mi
 ---
 apiVersion: v1
 kind: Service
