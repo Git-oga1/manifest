@@ -38,7 +38,7 @@ metadata:
 spec:
   selector:
     app: mavenwebapp
-  type: NodePort
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 8080
