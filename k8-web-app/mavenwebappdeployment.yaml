@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: mavenwebappcontainer
-          image: dockerlanthony/maven-web-application:6d818336616b471f757243a1fe1fb6f48641627b
+          image: dockerlanthony/maven-web-application:latest
           ports:
             - containerPort: 8080
 
